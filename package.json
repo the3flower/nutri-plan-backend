@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "nodemon --exec ts-node index.ts"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.0.1",
