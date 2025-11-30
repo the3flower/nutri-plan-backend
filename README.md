@@ -17,7 +17,7 @@ create `.nvmrc` by
 
 ```
 node -v > .nvmrc
-``
+```
 
 ### Build porject by
 
@@ -29,6 +29,7 @@ or: https://medium.com/@gabrieldrouin/node-js-2025-guide-how-to-setup-express-js
 npx express-generator
 
 ```
+
 note: `npx` mean https://docs.npmjs.com/cli/v8/commands/npx
 
 ### Turn to TypeScript
@@ -50,4 +51,15 @@ uses `tsconfig.json` setup by: https://blog.logrocket.com/express-typescript-nod
 ### Linting
 
 source: https://eslint.org/docs/latest/use/configure/migration-guide
+
+```
+
+```
+
+### Setup test by Jest
+
+Installation:
+
+```
+pnpm install --save-dev jest ts-jest @types/jest
 ```
