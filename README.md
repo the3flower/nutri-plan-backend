@@ -21,3 +21,7 @@ npx tsc --init
 ```
 
 this will creating tsconfig.json and official source to read: https://www.typescriptlang.org/tsconfig/
+
+### Linting
+
+source: https://eslint.org/docs/latest/use/configure/migration-guide
