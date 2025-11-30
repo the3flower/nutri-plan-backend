@@ -2,6 +2,7 @@
   "name": "nutri-plan-backend",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
@@ -22,6 +23,7 @@
     "@types/express": "^5.0.5",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.10.1",
+    "@types/pg": "^8.15.6",
     "dotenv": "^17.2.3",
     "eslint": "^9.39.1",
     "express": "^5.1.0",
@@ -30,6 +32,7 @@
     "nodemon": "^3.1.11",
     "npm": "^11.6.4",
     "prettier": "^3.7.2",
+    "prisma": "^7.0.1",
     "ts-jest": "^29.4.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"

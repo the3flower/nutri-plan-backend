@@ -63,3 +63,13 @@ Installation:
 ```
 pnpm install --save-dev jest ts-jest @types/jest
 ```
+
+## Setup Database
+
+Installation Prisma
+source: https://www.prisma.io/docs/getting-started/prisma-orm/quickstart/postgresql
+
+```
+pnpm install prisma @types/node @types/pg --save-dev
+pnpm install @prisma/client @prisma/adapter-pg pg dotenv
+```
