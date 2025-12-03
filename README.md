@@ -66,10 +66,34 @@ pnpm install --save-dev jest ts-jest @types/jest
 
 ## Setup Database
 
+### Prisma
+
 Installation Prisma
 source: https://www.prisma.io/docs/getting-started/prisma-orm/quickstart/postgresql
 
 ```
 pnpm install prisma @types/node @types/pg --save-dev
 pnpm install @prisma/client @prisma/adapter-pg pg dotenv
+```
+
+and follow steps in that docs
+
+### PostgreSQL in Local with Mac
+
+use brew
+check installed fomulae, if not just install it
+
+```
+brew list
+```
+
+run service:
+
+```
+# check services
+brew services
+
+# service start
+brew services start [service-name]
+brew services start postgresql@17
 ```
