@@ -129,8 +129,6 @@ prisma cli by prefix `npx`
 
 ```
 npx prisma
-
-
 ```
 
 command to generate `prisma.config.ts` and `schema.prisma`
@@ -150,8 +148,24 @@ create migration file:
 npx prisma migrate dev --name init
 ```
 
-prisma client:
+generate prisma client:
 
 ```
 npx prisma generate
+```
+
+create directory and file `/lib/prisma.ts`, export adapter(follow prisma doc)
+source: https://www.prisma.io/docs/getting-started/prisma-orm/quickstart/postgresql#7-instantiate-prisma-client
+
+```
+import "dotenv/config";
+import { PrismaPg } from '@prisma/adapter-pg'
+import { PrismaClient } from '../generated/prisma/client'
+
+const connectionString = `${process.env.DATABASE_URL}`
+
+const adapter = new PrismaPg({ connectionString })
+const prisma = new PrismaClient({ adapter })
+
+export { prisma }
 ```

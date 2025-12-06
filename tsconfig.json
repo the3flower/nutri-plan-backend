@@ -3,12 +3,14 @@
     "target": "ES2023",
     "module": "ESNext",
     "outDir": "./dist",
+    "moduleResolution": "node",
     "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
+  "type": "module",
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }
